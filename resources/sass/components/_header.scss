@@ -1,0 +1,32 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  .header__tryItButton {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: $pink;
+    text-decoration: none;
+    width: 10vw;
+    max-width: 150px;
+    min-width: 120px;
+    text-align: center;
+    border: 1px solid $pink;
+    border-radius: $lightBorderRadius;
+    font-size: 85%;
+    transition: all 0.5s ease;
+    padding: 3px;
+    text-transform: capitalize;
+    &:hover {
+      color: white;
+      background-color: $pink;
+    }
+    @media screen and (max-width: $mobileBreakPoint) {
+    min-width: unset;
+    width: 30vw;
+    }
+  }
+}

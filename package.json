@@ -1,0 +1,23 @@
+{
+  "name": "fylo-landing-page-with-features-grid-section",
+  "version": "1.0.0",
+  "description": "my solution to the challenge by frontendmentor.io",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch resources/sass/main.scss:resources/css/main.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sinamoraddar/Fylo-landing-page-with-features-grid-section.git"
+  },
+  "author": "sinamoraddar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sinamoraddar/Fylo-landing-page-with-features-grid-section/issues"
+  },
+  "homepage": "https://github.com/sinamoraddar/Fylo-landing-page-with-features-grid-section#readme",
+  "dependencies": {
+    "sass": "^1.22.10"
+  }
+}

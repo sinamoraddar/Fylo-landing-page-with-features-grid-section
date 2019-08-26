@@ -1,0 +1,27 @@
+* {
+  box-sizing: border-box;
+}
+body{
+  height: 100vh;
+}
+.container {
+  padding: 2% 4%;
+  @media screen and (max-width: $mobileBreakPoint) {
+    padding: 5% 5%;
+  }
+}
+
+.siteLogo {
+  width: 10vw;
+  max-width: 150px;
+  min-width: 120px;
+  height: auto;
+  img {
+    width: 100%;
+    height: auto;
+  }
+  @media screen and (max-width: $mobileBreakPoint) {
+    min-width: unset;
+    width: 30vw;
+  }
+}
