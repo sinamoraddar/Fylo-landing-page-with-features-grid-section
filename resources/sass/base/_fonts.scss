@@ -17,10 +17,10 @@ h6 {
 }
 
 h2 {
-  font-size: $smallHeadingsFontSize + -10;
+  font-size: $smallHeadingsFontSize + -5;
 }
 
 p {
-  font-size: $shortFontSize;
-  line-height: $normalLineHeight;
+  font-size: $shortFontSize + 8;
+  line-height: $normalLineHeight + -0.1;
 }
