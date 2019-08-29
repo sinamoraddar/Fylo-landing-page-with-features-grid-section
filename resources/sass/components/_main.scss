@@ -24,14 +24,18 @@ main {
     display: grid;
     grid-template-columns: auto;
     > h1,
-    img,
+    div,
     section {
       margin: $lightSpacing 0;
     }
   }
-  img {
-    width: 50%;
-    height: auto;
+  .main__introduction__featuresImage {
+    background: url(/Fylo-landing-page-with-features-grid-section/vendors/images/illustration-features.svg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100% !important;
+    height: 175px;
     margin-left: auto !important;
     margin-right: auto !important;
   }
