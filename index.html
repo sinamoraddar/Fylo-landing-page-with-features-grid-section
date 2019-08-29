@@ -1,91 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <title>
+      Frontend Mentor | Fylo landing page with features grid section
+    </title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./resources/css/main.css" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Fylo landing page with features grid section</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-  Sign In
-  Sign Up 
-
-  All Your Files In One Secure Location, Accessible Anywhere.
-  Get Started
-
-  Stay Productive, Wherever You Are
-
-  All platforms, all devices, all your files
-
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam 
-  egestas, elit sit amet fermentum viverra, ipsum dolor vehicula 
-  leo, ac accumsan magna tellus sed leo.
-
-  Real-time collaboration
-
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam 
-  egestas, elit sit amet fermentum viverra, ipsum dolor vehicula 
-  leo, ac accumsan magna tellus sed leo.
-
-  Security you can trust
-
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam 
-  egestas, elit sit amet fermentum viverra, ipsum dolor vehicula 
-  leo, ac accumsan magna tellus sed leo.
-
-  Automatic backups
-
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam 
-  egestas, elit sit amet fermentum viverra, ipsum dolor vehicula leo, 
-  ac accumsan magna tellus sed leo.
-
-  Get Early Access Today
-
-  It only takes a minute to sign up and our free starter tier is extremely 
-  generous. If you have any questions, our support team would be happy to 
-  help you.
-
-  Join
-
-  Phone: +1-543-123-4567
-  example@fylo.com
-
-  Fylo
-
-  Desktop App
-  Mobile App
-  Pricing
-  Feature
-
-  Company
-
-  About Us
-  Jobs
-  Press
-  Blog
-
-  Support
-
-  Contact Us
-  Terms
-  Privacy
-
-  Receive updates from us, including tips and tricks on how to improve your workflow.
-
-  Join
-
-  <footer>
-    <p class="attribution">
-      This page started life as a challenge on <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a> 🎉
-    </p>
-  </footer>
-</body>
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  </head>
+  <body>
+    <header>
+      <div class="header__background"></div>
+      <div class="container header">
+        <nav>
+          <a class="logo" href="#"
+            ><img src="./vendors/images/logo.svg" alt="fylo-logo"
+          /></a>
+          <div class="header__links">
+            <a class="link" href="#">Sign in</a>
+            <a class="link greenButton" href="#">Sign Up</a>
+          </div>
+        </nav>
+        <section>
+          <div class="header__image"></div>
+          <h1>
+            All your files in one secure <br />
+            location, accessible <br />
+            anywhere.
+          </h1>
+          <a class="link greenButton" href="#">Get Started</a>
+        </section>
+      </div>
+    </header>
+    <main class="container">
+      <section class="main__introduction">
+        <h1>
+          stay productive,<br />
+          wherever you are
+        </h1>
+        <img src="./vendors/images/illustration-features.svg" alt="features" />
+        <section class="main__introduction__details">
+          <article>
+            <h2>All platforms, all devices, all your files</h2>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas
+              quasi architecto exercitationem dolorum saepe autem nesciunt,
+              corporis libero possimus, tempore sint molestiae reiciendis
+              ratione. Et voluptatibus eius ipsam recusandae perspiciatis.
+            </p>
+          </article>
+          <article>
+            <h2>Security you can trust</h2>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas
+              quasi architecto exercitationem dolorum saepe autem nesciunt,
+              corporis libero possimus, tempore sint molestiae reiciendis
+              ratione. Et voluptatibus eius ipsam recusandae perspiciatis.
+            </p>
+          </article>
+          <article>
+            <h2>Real time collaboration</h2>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas
+              quasi architecto exercitationem dolorum saepe autem nesciunt,
+              corporis libero possimus, tempore sint molestiae reiciendis
+              ratione. Et voluptatibus eius ipsam recusandae perspiciatis.
+            </p>
+          </article>
+          <article>
+            <h2>Automatic backups</h2>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas
+              quasi architecto exercitationem dolorum saepe autem nesciunt,
+              corporis libero possimus, tempore sint molestiae reiciendis
+              ratione. Et voluptatibus eius ipsam recusandae perspiciatis.
+            </p>
+          </article>
+        </section>
+      </section>
+      <section class="main__signUp">
+        <h1>get early access today</h1>
+        <p>
+          It only takes a minute to sign up and our free starter tire is
+          extremely generou. If you have any questions, our support team would
+          be happy to help you
+        </p>
+        <form method="get" action="#">
+          <input type="email" placeholder="email@example.com" />
+          <button type="submit" class="greenButton link">Join</button>
+        </form>
+      </section>
+    </main>
+  </body>
 </html>

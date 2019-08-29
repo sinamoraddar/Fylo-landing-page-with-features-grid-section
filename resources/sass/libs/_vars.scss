@@ -1,19 +1,42 @@
 // breakPoints
 $mobileBreakPoint: 375px;
+$tabletBreakPoint: 768px;
 $desktopBreakPoint: 1440px;
 
 // colors
 // primary
-$pink: hsl(322, 100%, 66%);
-// neutral
-$veryDarkCyan: hsl(192, 100%, 9%);
-$grayishBlue: hsl(208, 11%, 55%);
+$softBlue: hsl(243, 86%, 85%);
+$veryDarkBlue: hsl(243, 87%, 12%);
+// accent
+$green: hsl(163, 95%, 43%);
+$darkBlue: hsl(243, 58%, 33%);
+//neutral
+$gray: hsl(0, 0%, 50%);
 
 // typography
-$poppinsFontFamily: "Poppins", sans-serif;
+//headings
+$raleWayFontFamily: "Raleway", sans-serif;
+$headingsFontWeight: 700;
+//body
 $openSansFontFamily: "Open Sans", sans-serif;
-$boldFontWeight: 700;
-$normalFontWeight: 400;
-
+$regularBodyFontWeight: 400;
+$semiBoldBodyFontWeight: 600;
+$boldBodyFontWeight: 700;
+// fontSizes
+$veryShortFontSize: 70%;
+$shortFontSize:78%;
+$smallHeadingsFontSize:105%;
+$normalHeadingsFontSize: 135%;
 // borderRadius
-$lightBorderRadius:5px;
+$lightBorderRadius: 2.5px;
+
+// spacings
+$normalSpacing: 70px;
+$lightSpacing:25px;
+$shortSpacing: 20px;
+$littleShortSpacing: 10px;
+$veryShortSpacing: 5px;
+
+// lineHeights
+
+$normalLineHeight: 1.7;
