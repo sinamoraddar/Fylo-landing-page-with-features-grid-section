@@ -1,9 +1,9 @@
 header {
   position: relative;
   overflow: hidden;
-  height: 570px;
+  height: 108vh;
   .header__background {
-    background: linear-gradient(160deg,$veryDarkBlue ,$darkBlue, $softBlue);
+    background: linear-gradient(160deg, $veryDarkBlue, $darkBlue, $softBlue);
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
@@ -13,7 +13,7 @@ header {
     bottom: 0;
     right: 0;
     left: 0;
-    transform: skewY(10deg);
+    transform: skewY(7deg);
     transform-origin: top right;
     z-index: -1;
   }
@@ -24,6 +24,7 @@ header {
     padding: $shortSpacing 0;
     > a {
       width: 50%;
+      max-width: 210px;
     }
     .logo {
       img {
@@ -35,12 +36,29 @@ header {
       display: flex;
       flex-direction: row;
       align-items: center;
-      justify-content: space-between;
+      justify-content: flex-end;
       width: 50%;
       a {
         display: inline-block;
         width: 90% !important;
+        max-width: 90px !important;
         margin-left: $veryShortSpacing;
+      }
+    }
+    @media screen and (min-width: $tabletBreakPoint) {
+      padding-top: $shortSpacing + 10;
+      > a {
+        width: 23% !important;
+      }
+      .header__links {
+        justify-content: flex-end;
+        width: 20% !important;
+        min-width: 200px;
+        .link {
+          display: inline-block;
+          width: 35% !important;
+          padding: 0.6em !important;
+        }
       }
     }
   }
@@ -48,22 +66,72 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: $normalSpacing 0;
+    height: 110vh;
+    margin: ($normalSpacing + -40) 0;
     * {
       margin: $littleShortSpacing;
     }
     .header__image {
-      background: url(/Fylo-landing-page-with-features-grid-section/vendors/images/illustration-hero.svg);
+      background: url(/vendors/images/illustration-hero.svg);
       background-size: contain;
       background-repeat: no-repeat;
       background-position: center;
       width: 100% !important;
-      height: 170px;
+      height: 34%;
     }
     .link {
       font-weight: $semiBoldBodyFontWeight;
       width: 50%;
       padding: $littleShortSpacing $shortSpacing !important;
     }
+    div:nth-of-type(2) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    @media screen and (min-width: $mobileBreakPoint) {
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      margin: ($normalSpacing + -35) 0;
+      height: 55vh;
+      > div {
+        width: 50% !important;
+        height: 100%;
+      }
+      .header__image {
+        height: 100%;
+        width: 50% !important;
+      }
+      .link {
+        width: 35%;
+        min-width: 125px;
+      }
+
+      div:nth-of-type(2) {
+        justify-content: center;
+        align-items: flex-start;
+        h1 {
+          text-align: start;
+          font-size: 1.3em;
+          line-height: 1.3;
+          margin-bottom: $lightSpacing + 10;
+        }
+        br {
+          display: none;
+        }
+        @media screen and (min-width: 1208px) {
+          h1 {
+            font-size: 1.9em;
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (min-width: $mobileBreakPoint) {
+    height: 100vh;
+  }
+  @media screen and (min-width: $tabletBreakPoint) {
+    height: 105vh;
   }
 }

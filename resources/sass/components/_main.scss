@@ -30,7 +30,7 @@ main {
     }
   }
   .main__introduction__featuresImage {
-    background: url(/Fylo-landing-page-with-features-grid-section/vendors/images/illustration-features.svg);
+    background: url(/vendors/images/illustration-features.svg);
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -61,4 +61,12 @@ main {
     margin: ($shortSpacing + -5) 0;
     width: 90%;
   }
+}
+
+//media queries
+@media screen and (min-width:$mobileBreakPoint){
+
+
+
+
 }
