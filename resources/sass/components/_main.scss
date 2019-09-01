@@ -21,8 +21,8 @@ main {
   }
 
   .main__introduction {
-    display: grid;
-    grid-template-columns: auto;
+    display: flex;
+    flex-direction: column;
     > h1,
     div,
     section {
@@ -64,9 +64,67 @@ main {
 }
 
 //media queries
-@media screen and (min-width:$mobileBreakPoint){
+@media screen and (min-width: $mobileBreakPoint) {
+  main {
+    justify-content: space-around;
+    margin: $lightSpacing 0;
+    // height: 180% !important;
+    // min-height: 900px !important;
+    h1 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.3em !important;  }
+  }
+  .main__introduction {
+    // height: 80%;
+    // margin: $shortSpacing 0;
+  }
+  .main__details__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 95%;
+    // margin: $shortSpacing 0!important;
+    // overflow: hidden;
+    div {
+      margin: $littleShortSpacing $lightSpacing !important;
+      // width: 45% !important;
+      // max-height: 225px;
+      height: 40% !important;
+      min-height: 180px;
+    }
+    section {
+      // marg
+    }
+  }
+  .main__introduction__details {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    grid-column-gap: $littleShortSpacing;
+    grid-row-gap: $shortSpacing;
+    height: 60% !important;
+    h2 {
+      font-size: 1em;
+    }
+    p {
+      font-size: 0.7em;
+    }
+    article {
+      margin: 0;
+    }
+  }
 
-
-
-
+  .main__introduction {
+    h1 {
+      br {
+        display: none !important;
+      }
+    }
+  }
+  .main__signUp {
+    width: 100%;
+    max-width: 425px;
+  }
 }

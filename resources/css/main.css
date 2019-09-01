@@ -248,7 +248,7 @@ header section div:nth-of-type(2) {
 }
 @media screen and (min-width: 375px) and (min-width: 1208px) {
   header section div:nth-of-type(2) h1 {
-    font-size: 1.9em;
+    font-size: 2.5em;
   }
 }
 @media screen and (min-width: 375px) {
@@ -285,8 +285,8 @@ main h1 {
   font-size: 130%;
 }
 main .main__introduction {
-  display: grid;
-  grid-template-columns: auto;
+  display: flex;
+  flex-direction: column;
 }
 main .main__introduction > h1,
 main .main__introduction div,
@@ -324,6 +324,56 @@ main .main__introduction__featuresImage {
   width: 90%;
 }
 
+@media screen and (min-width: 375px) {
+  main {
+    justify-content: space-around;
+    margin: 25px 0;
+  }
+  main h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3em !important;
+  }
+
+  .main__details__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 95%;
+  }
+  .main__details__container div {
+    margin: 10px 25px !important;
+    height: 40% !important;
+    min-height: 180px;
+  }
+  .main__introduction__details {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    grid-column-gap: 10px;
+    grid-row-gap: 20px;
+    height: 60% !important;
+  }
+  .main__introduction__details h2 {
+    font-size: 1em;
+  }
+  .main__introduction__details p {
+    font-size: 0.7em;
+  }
+  .main__introduction__details article {
+    margin: 0;
+  }
+
+  .main__introduction h1 br {
+    display: none !important;
+  }
+
+  .main__signUp {
+    width: 100%;
+    max-width: 425px;
+  }
+}
 footer {
   position: relative;
   overflow: hidden;
@@ -393,6 +443,12 @@ footer .footer section:nth-of-type(3) .signUpForm button {
 .footer__navBar ul li {
   font-size: 73%;
   margin: 15px 0;
+}
+
+@media screen and (min-width: 375px) {
+  footer {
+    margin-top: 70px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

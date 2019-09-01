@@ -75,3 +75,7 @@ footer {
     }
   }
 }
+
+@media screen and (min-width:$mobileBreakPoint){
+  footer{margin-top:$normalSpacing;}
+}
