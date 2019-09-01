@@ -196,7 +196,7 @@ header section * {
   margin: 10px;
 }
 header section .header__image {
-  background: url(/vendors/images/illustration-hero.svg);
+  background: url("/$fylo/vendors/images/illustration-hero.svg");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -229,6 +229,7 @@ header section div:nth-of-type(2) {
     width: 50% !important;
   }
   header section .link {
+    font-size: 95% !important;
     width: 35%;
     min-width: 125px;
   }
@@ -238,7 +239,7 @@ header section div:nth-of-type(2) {
   }
   header section div:nth-of-type(2) h1 {
     text-align: start;
-    font-size: 1.3em;
+    font-size: 1.6em;
     line-height: 1.3;
     margin-bottom: 35px;
   }
@@ -248,17 +249,17 @@ header section div:nth-of-type(2) {
 }
 @media screen and (min-width: 375px) and (min-width: 1208px) {
   header section div:nth-of-type(2) h1 {
-    font-size: 2.5em;
+    font-size: 2.3em;
   }
 }
 @media screen and (min-width: 375px) {
   header {
-    height: 100vh;
+    height: 90vh;
   }
 }
 @media screen and (min-width: 768px) {
   header {
-    height: 105vh;
+    height: 99vh;
   }
 }
 
@@ -294,7 +295,7 @@ main .main__introduction section {
   margin: 25px 0;
 }
 main .main__introduction__featuresImage {
-  background: url(/vendors/images/illustration-features.svg);
+  background: url("/$fylo/vendors/images/illustration-features.svg");
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -372,6 +373,37 @@ main .main__introduction__featuresImage {
   .main__signUp {
     width: 100%;
     max-width: 425px;
+  }
+}
+@media screen and (min-width: 768px) {
+  main h1 {
+    font-size: 1.6em !important;
+  }
+
+  .main__details__container {
+    flex-direction: row;
+    width: 100%;
+  }
+  .main__details__container div {
+    width: 40% !important;
+    min-height: 290px;
+  }
+  .main__details__container section {
+    width: 60% !important;
+  }
+
+  .main__introduction__details h2 {
+    font-size: 1.21em;
+  }
+  .main__introduction__details p {
+    width: 90%;
+    font-size: 0.87em;
+  }
+  .main__signUp {
+    max-width: 625px;
+  }
+  .main__signUp p {
+    font-size: 0.9em;
   }
 }
 footer {

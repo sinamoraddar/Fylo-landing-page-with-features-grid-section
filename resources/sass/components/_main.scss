@@ -30,7 +30,7 @@ main {
     }
   }
   .main__introduction__featuresImage {
-    background: url(/vendors/images/illustration-features.svg);
+    background: url('/$fylo/vendors/images/illustration-features.svg');
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -74,7 +74,8 @@ main {
       display: flex;
       justify-content: center;
       align-items: center;
-      font-size: 1.3em !important;  }
+      font-size: 1.3em !important;
+    }
   }
   .main__introduction {
     // height: 80%;
@@ -126,5 +127,48 @@ main {
   .main__signUp {
     width: 100%;
     max-width: 425px;
+  }
+}
+
+@media screen and (min-width: $tabletBreakPoint) {
+  main {
+    h1 {
+      font-size: 1.6em !important;
+    }
+  }
+  .main__details__container {
+    flex-direction: row;
+    width: 100%;
+    div {
+      width: 40% !important;
+      min-height: 290px;
+    }
+    section {
+      width: 60% !important;
+    }
+  }
+  .main__introduction__details {
+    h2 {
+      font-size: 1.21em;
+    }
+    p {
+      width: 90%;
+      font-size: 0.87em;
+    }
+    article {
+    }
+  }
+
+  .main__introduction {
+    h1 {
+      br {
+      }
+    }
+  }
+  .main__signUp {
+    max-width: 625px;
+    p {
+      font-size: 0.9em;
+    }
   }
 }
