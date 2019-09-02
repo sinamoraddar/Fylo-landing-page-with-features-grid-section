@@ -1,7 +1,7 @@
 header {
   position: relative;
   overflow: hidden;
-  height: 108vh;
+  height: 600px;
   .header__background {
     background: linear-gradient(160deg, $veryDarkBlue, $darkBlue, $softBlue);
     background-size: cover;
@@ -66,7 +66,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 110vh;
+    height: 500px;
     margin: ($normalSpacing + -40) 0;
     * {
       margin: $littleShortSpacing;
@@ -93,7 +93,7 @@ header {
       flex-direction: row-reverse;
       justify-content: space-between;
       margin: ($normalSpacing + -35) 0;
-      height: 55vh;
+      height: 75%;
       > div {
         width: 50% !important;
         height: 100%;
@@ -130,9 +130,12 @@ header {
   }
 
   @media screen and (min-width: $mobileBreakPoint) {
-    height: 90vh;
+    height: 500px;
   }
   @media screen and (min-width: $tabletBreakPoint) {
-    height: 99vh;
+    height: 550px;
+  }
+  @media screen and (min-width: 1200px) {
+    height: 625px;
   }
 }
