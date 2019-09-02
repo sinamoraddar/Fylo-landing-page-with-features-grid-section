@@ -409,7 +409,6 @@ main .main__introduction__featuresImage {
 footer {
   position: relative;
   overflow: hidden;
-  min-height: 800px;
 }
 footer .footer__background {
   background: #070439;
@@ -422,7 +421,7 @@ footer .footer__background {
   bottom: 0;
   right: 0;
   left: 0;
-  transform: skewY(10deg);
+  transform: skewY(7deg);
   transform-origin: top left;
   z-index: -1;
 }
@@ -498,6 +497,7 @@ footer .footer section:nth-of-type(3) .signUpForm button {
     align-items: center !important;
   }
   footer .footer form button {
+    width: 100% !important;
     align-self: center !important;
   }
 
@@ -508,37 +508,93 @@ footer .footer section:nth-of-type(3) .signUpForm button {
   .footer__navBar {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
     flex-wrap: wrap;
   }
   .footer__navBar div {
     width: auto;
+    margin: 0 auto;
   }
 }
 @media screen and (min-width: 768px) {
-  .footer {
-    grid-template-columns: auto auto auto;
+  footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 145px 0 50px 0 !important;
   }
-}
-section:nth-of-type(1) {
-  border-right: 1px solid white;
-  padding-right: 25px;
-}
-
-section:nth-of-type(2) {
-  margin: 0 25px;
-}
-section:nth-of-type(2) div {
-  margin: 0 10px;
-}
-section:nth-of-type(2) div h3 {
-  margin-top: 0;
-}
-
-section:nth-of-type(3) {
-  grid-row: 1 !important;
-  grid-column: 3;
-  border-left: 1px solid white;
+  footer .footer {
+    grid-template-columns: 25% 45% 30%;
+    margin: 8% 0 4% 0;
+    width: 100% !important;
+  }
+  footer .footer section {
+    width: 100%;
+    height: 100%;
+  }
+  footer .footer section:nth-of-type(1) {
+    border-right: 1px solid white;
+    padding-right: 25px;
+  }
+  footer .footer section:nth-of-type(2) div {
+    margin: 0 10px;
+  }
+  footer .footer section:nth-of-type(2) div h3 {
+    margin-top: 0;
+  }
+  footer .footer section:nth-of-type(3) {
+    grid-row: 1 !important;
+    grid-column: 3;
+    border-left: 1px solid white;
+    padding-left: 25px;
+    justify-content: space-evenly;
+  }
+  footer .footer section:nth-of-type(3) p {
+    margin: 0 0 15px 0;
+  }
+  footer .footer section:nth-of-type(3) form,
+footer .footer section:nth-of-type(3) p {
+    width: 90%;
+    text-align: start;
+  }
+  footer .footer section:nth-of-type(3) form button {
+    align-self: flex-end !important;
+    width: 60% !important;
+  }
+  footer .footer .footer__navBar {
+    justify-content: space-evenly;
+    min-width: 275px;
+    width: 100%;
+    height: 100%;
+  }
+  footer .footer .footer__navBar div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+  }
+  footer .footer .footer__navBar div h3 {
+    height: 10%;
+    margin: 0;
+  }
+  footer .footer .footer__navBar div ul {
+    margin: auto 0;
+    height: 85%;
+  }
+  footer .footer .footer__navBar div ul li {
+    margin: 30px 0;
+  }
+  footer .footer .footer__details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+  footer .footer .footer__details .logo {
+    margin: 10px 0;
+    width: 95% !important;
+    max-width: 200px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
