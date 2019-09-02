@@ -218,7 +218,7 @@ header section div:nth-of-type(2) {
     flex-direction: row-reverse;
     justify-content: space-between;
     margin: 35px 0;
-    height: 75%;
+    height: 300px;
   }
   header section > div {
     width: 50% !important;
@@ -262,7 +262,7 @@ header section div:nth-of-type(2) {
     height: 550px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1208px) {
   header {
     height: 625px;
   }

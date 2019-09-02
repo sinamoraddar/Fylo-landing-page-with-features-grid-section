@@ -93,7 +93,7 @@ header {
       flex-direction: row-reverse;
       justify-content: space-between;
       margin: ($normalSpacing + -35) 0;
-      height: 75%;
+      height: 300px;
       > div {
         width: 50% !important;
         height: 100%;
@@ -135,7 +135,7 @@ header {
   @media screen and (min-width: $tabletBreakPoint) {
     height: 550px;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1208px) {
     .header {
         section {
           h1 {
