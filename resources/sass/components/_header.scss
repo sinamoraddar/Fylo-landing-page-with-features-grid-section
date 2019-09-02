@@ -136,6 +136,13 @@ header {
     height: 550px;
   }
   @media screen and (min-width: 1200px) {
+    .header {
+        section {
+          h1 {
+          width: 90%;
+          }
+        }
+    }
     height: 625px;
   }
 }

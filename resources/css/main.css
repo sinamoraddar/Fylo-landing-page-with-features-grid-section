@@ -266,6 +266,9 @@ header section div:nth-of-type(2) {
   header {
     height: 625px;
   }
+  header .header section h1 {
+    width: 90%;
+  }
 }
 
 main {
@@ -579,6 +582,7 @@ footer .footer section:nth-of-type(3) p {
     height: 100%;
   }
   footer .footer .footer__navBar div h3 {
+    font-size: 115%;
     height: 10%;
     margin: 0;
   }
@@ -588,6 +592,9 @@ footer .footer section:nth-of-type(3) p {
   }
   footer .footer .footer__navBar div ul li {
     margin: 30px 0;
+  }
+  footer .footer .footer__navBar div ul li a {
+    font-size: 105%;
   }
   footer .footer .footer__details {
     display: flex;

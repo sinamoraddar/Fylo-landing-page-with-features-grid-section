@@ -182,6 +182,7 @@ footer {
           justify-content: space-between;
           height: 100%;
           h3 {
+            font-size: 115%;
             height: 10%;
             margin: 0;
           }
@@ -191,7 +192,10 @@ footer {
             // justify-content: space-between;
             margin: auto 0;
             height: 85%;
-            li{margin: 30px 0;}
+            li{margin: 30px 0;
+            a{
+              font-size: 105%;
+            }}
             // li:nth-of-type(1){
             //   justify-self: flex-start!important;
             // }
