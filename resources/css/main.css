@@ -196,7 +196,7 @@ header section * {
   margin: 10px;
 }
 header section .header__image {
-  background: url("/$fylo/vendors/images/illustration-hero.svg");
+  background: url("/Fylo-landing-page-with-features-grid-section/vendors/images/illustration-hero.svg");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -295,7 +295,7 @@ main .main__introduction section {
   margin: 25px 0;
 }
 main .main__introduction__featuresImage {
-  background: url("/$fylo/vendors/images/illustration-features.svg");
+  background: url("/Fylo-landing-page-with-features-grid-section/vendors/images/illustration-features.svg");
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -481,6 +481,64 @@ footer .footer section:nth-of-type(3) .signUpForm button {
   footer {
     margin-top: 70px;
   }
+  footer .footer section:nth-of-type(3) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  footer .footer section:nth-of-type(3) p {
+    width: 90%;
+  }
+  footer .footer section:nth-of-type(3) p br {
+    display: none !important;
+  }
+  footer .footer form {
+    width: 70%;
+    max-width: 450px;
+    align-items: center !important;
+  }
+  footer .footer form button {
+    align-self: center !important;
+  }
+
+  .footer__details .logo {
+    max-width: 140px;
+  }
+
+  .footer__navBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+  .footer__navBar div {
+    width: auto;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer {
+    grid-template-columns: auto auto auto;
+  }
+}
+section:nth-of-type(1) {
+  border-right: 1px solid white;
+  padding-right: 25px;
+}
+
+section:nth-of-type(2) {
+  margin: 0 25px;
+}
+section:nth-of-type(2) div {
+  margin: 0 10px;
+}
+section:nth-of-type(2) div h3 {
+  margin-top: 0;
+}
+
+section:nth-of-type(3) {
+  grid-row: 1 !important;
+  grid-column: 3;
+  border-left: 1px solid white;
 }
 
 /*# sourceMappingURL=main.css.map */

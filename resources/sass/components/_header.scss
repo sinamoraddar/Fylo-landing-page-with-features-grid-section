@@ -72,7 +72,7 @@ header {
       margin: $littleShortSpacing;
     }
     .header__image {
-      background: url("/$fylo/vendors/images/illustration-hero.svg");
+      background: url("/"+$fylo+"/vendors/images/illustration-hero.svg");
       background-size: contain;
       background-repeat: no-repeat;
       background-position: center;

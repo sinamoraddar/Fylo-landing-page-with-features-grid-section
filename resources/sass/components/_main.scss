@@ -30,7 +30,7 @@ main {
     }
   }
   .main__introduction__featuresImage {
-    background: url('/$fylo/vendors/images/illustration-features.svg');
+    background: url('/'+$fylo+'/vendors/images/illustration-features.svg');
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
