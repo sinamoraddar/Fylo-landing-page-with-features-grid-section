@@ -28,6 +28,7 @@ p {
 }
 
 * {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   color: white;
 }
@@ -99,13 +100,18 @@ h1 {
 }
 
 .signUpForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-appearance: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   width: 100%;
 }
 .signUpForm * {
   -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.144);
   width: 100%;
   height: 45px;
@@ -273,8 +279,15 @@ header section div:nth-of-type(2) {
 
 main {
   margin: 70px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 main * {
@@ -294,7 +307,12 @@ main h1 {
   font-size: 130%;
 }
 main .main__introduction {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
 }
 main .main__introduction > h1,
@@ -318,8 +336,15 @@ main .main__introduction__featuresImage {
 }
 
 .main__signUp {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 .main__signUp h1 {
@@ -335,19 +360,33 @@ main .main__introduction__featuresImage {
 
 @media screen and (min-width: 375px) {
   main {
+    -ms-flex-pack: distribute;
     justify-content: space-around;
     margin: 25px 0;
   }
   main h1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     font-size: 1.3em !important;
   }
 
   .main__details__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     height: 95%;
   }
@@ -389,6 +428,9 @@ main .main__introduction__featuresImage {
   }
 
   .main__details__container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
     width: 100%;
   }
