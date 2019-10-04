@@ -1,6 +1,6 @@
 * {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   color: white;
 }
 body {
@@ -32,10 +32,6 @@ body {
 a {
   text-decoration: none;
   color: white;
-  &:hover,
-  &:active {
-    text-decoration: underline !important;
-  }
 }
 
 .logo {
@@ -50,16 +46,19 @@ a {
   padding: $veryShortSpacing $veryShortSpacing !important;
   margin-left: $veryShortSpacing !important;
   text-align: center;
-  &:hover {
-    color: $gray;
-  }
 }
 .greenButton {
   background: $green !important;
   border-radius: $lightBorderRadius !important;
   color: white;
-
+  transition: 0.2s background ease;
   font-weight: $semiBoldBodyFontWeight;
+  cursor: pointer;
+  @media screen and (hover: hover) {
+    &:hover {
+      background: darken($green, 10%) !important;
+    }
+  }
 }
 
 h1 {
@@ -74,8 +73,8 @@ h1 {
   -webkit-appearance: none;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   width: 100%;
   * {
     -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);

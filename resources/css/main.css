@@ -68,9 +68,6 @@ a {
   text-decoration: none;
   color: white;
 }
-a:hover, a:active {
-  text-decoration: underline !important;
-}
 
 .logo img {
   width: 100%;
@@ -83,15 +80,19 @@ a:hover, a:active {
   margin-left: 5px !important;
   text-align: center;
 }
-.link:hover {
-  color: gray;
-}
 
 .greenButton {
   background: #05d69b !important;
   border-radius: 2.5px !important;
   color: white;
+  transition: 0.2s background ease;
   font-weight: 600;
+  cursor: pointer;
+}
+@media screen and (hover: hover) {
+  .greenButton:hover {
+    background: #04a477 !important;
+  }
 }
 
 h1 {
@@ -202,12 +203,12 @@ header section * {
   margin: 10px;
 }
 header section .header__image {
-  background: url("/Fylo-landing-page-with-features-grid-section/vendors/images/illustration-hero.svg");
+  background: url("/vendors/images/illustration-hero.svg");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
   width: 100% !important;
-  height: 34%;
+  height: 45%;
 }
 header section .link {
   font-weight: 600;
@@ -219,12 +220,12 @@ header section div:nth-of-type(2) {
   flex-direction: column;
   align-items: center;
 }
-@media screen and (min-width: 375px) {
+@media screen and (min-width: 568px) {
   header section {
     flex-direction: row-reverse;
     justify-content: space-between;
     margin: 35px 0;
-    height: 300px;
+    height: 335px;
   }
   header section > div {
     width: 50% !important;
@@ -253,14 +254,14 @@ header section div:nth-of-type(2) {
     display: none;
   }
 }
-@media screen and (min-width: 375px) and (min-width: 1208px) {
+@media screen and (min-width: 568px) and (min-width: 1208px) {
   header section div:nth-of-type(2) h1 {
     font-size: 2.3em;
   }
 }
 @media screen and (min-width: 375px) {
   header {
-    height: 500px;
+    height: 575px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -271,6 +272,9 @@ header section div:nth-of-type(2) {
 @media screen and (min-width: 1208px) {
   header {
     height: 625px;
+  }
+  header .header section {
+    height: 375px;
   }
   header .header section h1 {
     width: 90%;
@@ -321,7 +325,7 @@ main .main__introduction section {
   margin: 25px 0;
 }
 main .main__introduction__featuresImage {
-  background: url("/Fylo-landing-page-with-features-grid-section/vendors/images/illustration-features.svg");
+  background: url("/vendors/images/illustration-features.svg");
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;

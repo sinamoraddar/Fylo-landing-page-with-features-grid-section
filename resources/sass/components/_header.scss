@@ -72,12 +72,12 @@ header {
       margin: $littleShortSpacing;
     }
     .header__image {
-      background: url("/"+$fylo+"/vendors/images/illustration-hero.svg");
+      background: url("/vendors/images/illustration-hero.svg");
       background-size: contain;
       background-repeat: no-repeat;
       background-position: center;
       width: 100% !important;
-      height: 34%;
+      height: 45%;
     }
     .link {
       font-weight: $semiBoldBodyFontWeight;
@@ -89,11 +89,11 @@ header {
       flex-direction: column;
       align-items: center;
     }
-    @media screen and (min-width: $mobileBreakPoint) {
+    @media screen and (min-width: 568px) {
       flex-direction: row-reverse;
       justify-content: space-between;
       margin: ($normalSpacing + -35) 0;
-      height: 300px;
+      height: 335px;
       > div {
         width: 50% !important;
         height: 100%;
@@ -130,18 +130,19 @@ header {
   }
 
   @media screen and (min-width: $mobileBreakPoint) {
-    height: 500px;
+    height: 575px;
   }
   @media screen and (min-width: $tabletBreakPoint) {
     height: 550px;
   }
   @media screen and (min-width: 1208px) {
     .header {
-        section {
-          h1 {
+      section {
+        h1 {
           width: 90%;
-          }
         }
+        height: 375px;
+      }
     }
     height: 625px;
   }
