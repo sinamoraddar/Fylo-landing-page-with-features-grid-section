@@ -5,11 +5,11 @@ main {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   * {
     color: $gray;
   }
@@ -33,8 +33,8 @@ main {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     > h1,
     div,
     section {
@@ -42,7 +42,7 @@ main {
     }
   }
   .main__introduction__featuresImage {
-    background: url('/vendors/images/illustration-features.svg');
+    background: url("/"+$fylo+"/vendors/images/illustration-features.svg");
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -65,11 +65,11 @@ main {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   h1 {
     margin: $littleShortSpacing 0;
   }
@@ -86,7 +86,7 @@ main {
 @media screen and (min-width: $mobileBreakPoint) {
   main {
     -ms-flex-pack: distribute;
-        justify-content: space-around;
+    justify-content: space-around;
     margin: $lightSpacing 0;
     // height: 180% !important;
     // min-height: 900px !important;
@@ -95,11 +95,11 @@ main {
       display: -ms-flexbox;
       display: flex;
       -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center;
       -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
       font-size: 1.3em !important;
     }
   }
@@ -113,11 +113,11 @@ main {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     height: 95%;
     // margin: $shortSpacing 0!important;
     // overflow: hidden;
@@ -172,8 +172,8 @@ main {
   .main__details__container {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
     width: 100%;
     div {
       width: 40% !important;

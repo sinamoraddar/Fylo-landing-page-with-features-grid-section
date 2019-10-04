@@ -203,7 +203,7 @@ header section * {
   margin: 10px;
 }
 header section .header__image {
-  background: url("/vendors/images/illustration-hero.svg");
+  background: url("/Fylo-landing-page-with-features-grid-section/vendors/images/illustration-hero.svg");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -325,7 +325,7 @@ main .main__introduction section {
   margin: 25px 0;
 }
 main .main__introduction__featuresImage {
-  background: url("/vendors/images/illustration-features.svg");
+  background: url("/Fylo-landing-page-with-features-grid-section/vendors/images/illustration-features.svg");
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
